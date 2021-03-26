@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+    <html class="js svg audio canvas cssremunit csscalc cssgradients supports touchevents video cssanimations cssfilters flexbox flexboxlegacy no-flexboxtweener flexwrap csstransforms csstransforms3d csstransitions backgroundblendmode cl-loaded" lang="en" style="" data-useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"><!--<![endif]--><head>
+
+        <!--- basic page needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <title>Urbit - Informações Territoriais Urbanas - De Ar a Zoneamento</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <!-- mobile specific metas
+        ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- CSS
+        ================================================== -->
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/vendor.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="dist/switchery.css" />
+        <script src="dist/switchery.js"></script>
+    
+        <style type="text/css" media="screen">
+           
+         </style> 
+    
+        <!-- script
+        ================================================== -->
+        <script src="js/modernizr.js"></script>
+        <script src="js/pace.min.js"></script>
+        <script>
+            var switchery = {};
+            $.fn.initComponents = function () {
+                //Init CheckBox Style
+                var searchBy = ".js-switch";
+                $(this).find(searchBy).each(function (i, html) {
+                    debugger;
+                    if (!$(html).next().hasClass("switchery")) {
+                        switchery[html.getAttribute('id')] = new Switchery(html, $(html).data());
+                    }
+                });
+            };
+        </script>
+
+        <!-- font awesome
+        ================================================== -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+        <!-- favicons
+        ================================================== -->
+        <link rel="shortcut icon" href="images/urbit.ico" type="image/x-icon">
+        <link rel="icon" href="images/urbit.ico" type="image/x-icon">
+    
+    </head>
+    
+    <body id="top" class="pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+      <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div></div>
+    
+        <!-- header
+        ================================================== -->
+        <header class="s-header">
+    
+            <div class="header-logo">
+                <a class="site-logo" href="index.html">
+                    <img src="images/grupo-1014.png" alt="Homepage">
+                </a>                
+            </div>
+            <div class="header-logo2">
+                <a class="Grupo-8576" href="https://www.facebook.com/Urbit-1060025620805347/">                
+                    <i class="fab fa-facebook-f"></i>                
+                </a>
+                <a class="Grupo-1015" href="https://www.youtube.com/channel/UCy7lNxd5ZxmHjRQEzPIhrLQ">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a class="Grupo-1015" href="https://www.instagram.com/urbitcity/">
+                    <i class="fab fa-instagram"></i>
+                </a>   
+            </div>
+
+           
+            <nav class="header-nav">
+                <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+                <div class="header-nav__content">
+                    <h3>NAVEGAÇÃO</h3>
+                    <ul class="header-nav__list">
+                        <li class="current"><a class="smoothscroll" href="#" title="">Home</a></li>
+                        <li><a class="smoothscroll" href="#" title="">Sobre nós</a></li>
+                        <li><a class="smoothscroll" href="#" title="">Cidades</a></li>
+                        <li><a class="smoothscroll" href="#" title="">Plataforma para</a></li>
+                        <li><a class="smoothscroll" href="#" title="">Mapas</a></li>
+                        <li><a class="smoothscroll" href="#" title="">Parceiros</a></li>
+                        <li><a class="smoothscroll" href="http://blog.urbit.com.br/" title="">Blog</a></li>
+                        <li><a class="smoothscroll" href="#" title="">API Urbit</a></li>
+                        <li><a class="smoothscroll" href="#" title="">Preços</a></li>
+                        <li><a class="smoothscroll" href="#" title="">Contato</a></li>
+                        <li><a class="smoothscroll" href="#" title="">Login</a></li>
+                        <br>
+                        <div class="header-logo3">
+                            <a class="Grupo-8577" href="https://www.facebook.com/Urbit-1060025620805347/">                
+                                <i class="fab fa-facebook-f"></i>                
+                            </a>
+                            <a class="Grupo-1015" href="https://www.youtube.com/channel/UCy7lNxd5ZxmHjRQEzPIhrLQ">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a class="Grupo-1015" href="https://www.instagram.com/urbitcity/">
+                                <i class="fab fa-instagram"></i>
+                            </a>   
+                        </div>
+                    </ul>                
+                </div> 
+            </nav>
+    
+            <div class="header-menu-principal">        
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="#" class="list-header">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-header">Cidades</a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-header">Plataforma para</a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-header">Mapas</a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-header">Parceiros</a>
+                    </li>
+                    <li>
+                        <a href="http://blog.urbit.com.br/" class="list-header">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-header">API Urbit</a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-header">Preços</a>
+                    </li>
+                    <li>
+                        <a href="#" class="list-header">Contato</a>
+                    </li>
+                    <li>
+                        <button class="btn8 img_container" href="#">Login</button>
+                    </li>
+                </ul>
+            </div> 
+
+            <a class="header-menu-toggle" href="https://urbit.com.br/login">
+                <span class="header-menu-icon"></span>
+            </a>
+    
+    
+        </header> <!-- end s-header -->
+    
+    
+        <!-- home
+        ================================================== -->
+        <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/architecture.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center" style="background-image: url(&quot;images/architecture.jpg&quot;); background-size: cover; background-position: center center;">
+    
+            <div class="overlay" style="background-color: unset;"></div>
+            <div class="shadow-overlay"></div>
+    
+            <div class="home-content home-content_2">
+    
+                <div class="row home-content__main home-content_22">
+                    <div class="margin-div">
+                        <h1>Informações territoriais urbanas</h1>  <br> <br>     
+
+                        <div class="row mix-grid">                            
+
+                            <div class="col-busca col-sm-4 mix busca_6 active" style="opacity: 1;display: block;float: inherit;height: 0px;">
+                                <div class="mix-inner">
+                                    <div class="mix-details">                    
+                                        <div class="container-compare">
+                                            <form name="frm-buscar" class="frm-buscar" method="post">
+                                                <div class="btn-group">                                                    
+                                                    <a class="Caminho-2234" href="index.html">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                    </a>
+                                                    <select class="opt-city">
+                                                    <option value="São Paulo">São Paulo</option>
+                                                    <option value="Belo Horizonte">Belo Horizonte</option>                                                    
+                                                    </select>
+                                                    <input class="input-geocoder" type="text" placeholder="Endereço" autocomplete="off">
+                                                    <button class="btn-primary4">Buscar</button>
+                                                </div>                                                                                        
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+        
+                    </div>                    
+                </div>
+            </div> <!-- end home-content -->
+
+        </section> <!-- end s-home -->
+    
+        <!-- mobile
+        ================================================== -->
+        <section id="styles" style="padding-bottom: 0rem;" class="s-styles section-divider section-mob2">            
+            
+            <div class="row section-header aos-init aos-animate" data-aos="fade-up">
+                <div class="col-full">
+                    <h1 class="display-1">Consultorias</h1>
+                </div>
+            </div>
+              
+            <div class="row">
+                <div class="column22 tab-full">
+                    <img src="images/mer-imobiliario.png" alt="">
+                </div>
+
+                <div class="column22 tab-full">
+                    <h4 class="section-title">Mercado Imobiliário</h4>
+                    <div class="section-p">
+                        <p>A URBIT realiza estudos diversos para empresas do mercado imobiliário e proprietários de terrenos, tais como:</p>
+                        <ul id="lista">
+                            <li>- Estudos de demanda e vocação imobiliária</li>
+                            <li>- Viabilidade econômica e financeira de empreendimentos imobiliários para venda e para renda</li>
+                            <li>- Seleção de áreas para incorporação</li>
+                            <li>- Avaliação de imóveis</li>
+                            <li>- Coleta, análise e monitoramento de informações periódicas, tais como oferta de imóveis, lançamentos imobiliários, alvarás, entre outros.</li>                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column22 tab-full">
+                    <img src="images/bancos.png" alt="">
+                </div>
+
+                <div class="column22 tab-full">
+                    <h4 class="section-title">Infraestrutura - Concessões e PPPs</h4>
+                    <div class="section-p">
+                        <p>Estudos de receitas acessórias de empreendimentos imobiliários associados 
+                        no ambiente de concessões públicas e/ou parcerias público-privadas de
+                        infraestrutura, tais como rodovias, ferrovias, entre outras.
+                        </p>                   
+                        <p>Modelagem econômica e financeira de Projetos Urbanos e/ou Operações Urbanas.</p>
+                        <p>Avaliação e recomendações de usos para ativos públicos ociosos ou subutilizados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column22 tab-full">
+                    <img src="images/governo.png" alt="">
+                </div>
+
+                <div class="column22 tab-full">
+                   <h4 class="section-title">Políticas públicas e Desenvolvimento Urbano</h4>
+                   <div class="section-p">
+                        <p>Modelagem econômica e financeira de planos, projetos urbanos ou operações Urbanas.</p>
+                        <p>Estudos de demanda habitacional.</p>
+                        <p>Estimativa de áreas prováveis de transformação para municípios - Oferta e Demanda imobiliária.</p>
+                    </div>
+                </div>
+            </div> <!-- end row -->                
+
+        </section> <!-- end mobile --> 
+        
+        <section id="styles" style="padding-bottom: 0rem;" class="s-styles section-divider section-mob">            
+            
+            <div class="row section-header aos-init aos-animate" data-aos="fade-up">
+                <div class="col-full">
+                    <h1 class="display-1">Consultorias</h1>
+                </div>
+            </div>
+              
+            <div class="row">
+                <div class="column22 tab-full">
+                    <h4 class="section-title">Mercado Imobiliário</h4>
+                    <div class="section-p">
+                        <p>A URBIT realiza estudos diversos para empresas do mercado imobiliário e proprietários de terrenos, tais como:</p>
+                        <ul id="lista">
+                            <li>- Estudos de demanda e vocação imobiliária</li>
+                            <li>- Viabilidade econômica e financeira de empreendimentos imobiliários para venda e para renda</li>
+                            <li>- Seleção de áreas para incorporação</li>
+                            <li>- Avaliação de imóveis</li>
+                            <li>- Coleta, análise e monitoramento de informações periódicas, tais como oferta de imóveis, lançamentos imobiliários, alvarás, entre outros.</li>                    
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="column22 tab-full">
+                    <img src="images/mer-imobiliario.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="column22 tab-full">
+                    <img src="images/bancos.png" alt="">
+                 </div>
+
+                <div class="column22 tab-full">
+                    <h4 class="section-title">Infraestrutura - Concessões e PPPs</h4>
+                    <div class="section-p">
+                        <p>Estudos de receitas acessórias de empreendimentos imobiliários associados 
+                        no ambiente de concessões públicas e/ou parcerias público-privadas de
+                        infraestrutura, tais como rodovias, ferrovias, entre outras.
+                        </p>                   
+                        <p>Modelagem econômica e financeira de Projetos Urbanos e/ou Operações Urbanas.</p>
+                        <p>Avaliação e recomendações de usos para ativos públicos ociosos ou subutilizados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column22 tab-full">
+                   <h4 class="section-title">Políticas públicas e Desenvolvimento Urbano</h4>
+                   <div class="section-p">
+                        <p>Modelagem econômica e financeira de planos, projetos urbanos ou operações Urbanas.</p>
+                        <p>Estudos de demanda habitacional.</p>
+                        <p>Estimativa de áreas prováveis de transformação para municípios - Oferta e Demanda imobiliária.</p>
+                    </div>
+                </div>
+
+                <div class="column22 tab-full">
+                   <img src="images/governo.png" alt="">
+                </div>
+    
+            </div> <!-- end row -->                
+
+        </section> <!-- end -->
+
+        <!-- contact
+        ================================================== -->
+        <section style="padding-bottom: 6.2rem; padding-top: 1.2rem;" class="s-services">
+                
+            <div class="row"> 
+
+                <div class="column2">
+                    <div style="text-align:center; color: black;">
+                        <h2 style="color: black;">contato</h2>
+                        <p>Dúvidas e consultas? Entre em contato</p>
+                    </div>
+                    <form action="/action_page.php" class="formcs2">
+                        <input class="input2" type="text" id="fname" name="firstname" placeholder="Nome">
+                        <input class="input2" type="text" id="email" name="email" placeholder="Email">                
+                        <input class="input2" type="text" id="number" name="number" placeholder="Telefone"> 
+                        <select class="select2" id="assunto" name="assunto" placeholder="Assunto">
+                        
+                        <option value="?">?</option>
+                        <option value="??">??</option>
+                        <option value="???">???</option>
+                        </select>
+                        <label for="subject">Sua mensagem</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                        <button class="btn-primary7" style="text-align: right;">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="column2">
+                    <div style="text-align:center">
+                        <h2 style="color: black;">informação <br> de contato</h2>                    
+                    </div> <br> <br>
+
+                    <div style="width: 80%; padding-left: 153px;">
+                        <p style="color: #5dd059;">Onde nos encontrar</p>
+                        <p>Rua Dr. Antônio Bento. 746 <br>
+                            Santo Amaro. São Paulo. SP - Brasil <br>
+                            | Osmose Coworking
+                        </p>
+                        <p>Av. Prof. Lineu Prestes. 2422 <br>
+                            Cidade Universitária. São Paulo. SP - Brasil
+                            |CIETEC
+                        </p>     
+                        <p style="color: #5dd059;">Email</p>
+                        <p>contato@urbit.com.br</p>     
+                        <p style="color: #5dd059;">Telefone</p>    
+                        <p>+55 (11) 4172-0073</p>   
+                        <div style="float: left;">
+                        <a href="index.html">                
+                            <img class="sm1" src="images/facebook.png" alt="">                
+                        
+                            <img class="sm1" src="images/twitter.jpg" alt=""> 
+                        
+                            <img class="sm1" src="images/youtube.png" alt=""> 
+                        </a>   
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-primary">
+                    <div style="text-align:center; color: black;">
+                        <h2 style="color: black;">contato</h2>
+                        <p>Dúvidas e consultas? Entre em contato</p>
+                    </div>
+                    <form action="/action_page.php" class="formcs">
+                        <input class="input2" type="text" id="fname" name="firstname" placeholder="Nome">
+                        <input class="input2" type="text" id="email" name="email" placeholder="Email">                
+                        <input class="input2" type="text" id="number" name="number" placeholder="Telefone"> 
+                        <select class="select2" id="assunto" name="assunto" placeholder="Assunto">
+                        
+                        <option value="?">?</option>
+                        <option value="??">??</option>
+                        <option value="???">???</option>
+                        </select>
+                        <label for="subject">Sua mensagem</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                        <button class="btn-primary7" style="text-align: right;">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="contact-secondary">
+                    <div style="text-align:center">
+                        <h2 style="color: black;">informação <br> de contato</h2>                    
+                    </div> <br> 
+                    
+                    <div style="width: 100%; padding-left: 34px;">
+                        <p style="color: #5dd059;">Onde nos encontrar</p>
+                        <p>Rua Dr. Antônio Bento. 746 <br>
+                            Santo Amaro. São Paulo. SP - Brasil <br>
+                            | Osmose Coworking
+                        </p>
+                        <p>Av. Prof. Lineu Prestes. 2422 <br>
+                            Cidade Universitária. São Paulo. SP - Brasil
+                            |CIETEC
+                        </p>     
+                        <p style="color: #5dd059;">Email</p>
+                        <p>contato@urbit.com.br</p>     
+                        <p style="color: #5dd059;">Telefone</p>    
+                        <p>+55 (11) 4172-0073</p>   
+                        <div style="float: left;">
+                        <a href="index.html">                
+                            <img class="sm1" src="images/facebook.png" alt="">                
+                        
+                            <img class="sm1" src="images/twitter.jpg" alt=""> 
+                        
+                            <img class="sm1" src="images/youtube.png" alt=""> 
+                        </a>   
+                        </div>
+                    </div>
+
+                </div>
+      
+            </div>
+
+        </section> <!-- end s-contact -->
+    
+    
+        <!-- footer
+        ================================================== -->
+        <footer class="footer">
+    
+            <div class="row footerdiv">
+    
+                <div class="col-six tab-full left footer-desc">
+                    
+                    <span style="text-align: center;">Urbit ©2019 Todos os Direitos Reservados</span>
+    
+                </div>
+    
+                <div class="col-six tab-full right footer-subscribe">
+    
+                    <img style="float: right;" src="images/Grupo 8825.png" alt="">
+    
+                </div>
+    
+            </div> <!-- end footer-main -->
+    
+            
+    
+        </footer> <!-- end footer -->
+    
+    
+        <!-- photoswipe background
+        ================================================== -->
+        <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+    
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+    
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+    
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title="Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div> <!-- end photoSwipe background -->
+    
+    
+        <!-- preloader
+        ================================================== -->
+        <div id="preloader" style="display: none;">
+            <div id="loader" style="display: none;">
+                <div class="line-scale-pulse-out">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <!-- Java Script
+        ================================================== -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    
+    
+    
+    </body></html>
